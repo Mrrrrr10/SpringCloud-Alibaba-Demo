@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: nacos-config-depth  # 表示当前应用需要向nacos配置配置中心索要nacos-config-depth的配置
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        file-extension: yaml
+        shared-configs[0]:
+          dataId: mybatis-plus.yaml
+          group: DEFAULT_GROUP
+          refresh: true
+        shared-configs[1]:
+          dataId: redis.yaml
+          group: DEFAULT_GROUP
+          refresh: true
