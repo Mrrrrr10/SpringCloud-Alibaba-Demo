@@ -9,11 +9,11 @@ spring:
       config:
         server-addr: localhost:8848
         file-extension: yaml
-        shared-configs[0]:
+        extension-configs[0]:
           dataId: mybatis-plus.yaml
           group: DEFAULT_GROUP
           refresh: true
-        shared-configs[1]:
+        shared-configs[0]:
           dataId: redis.yaml
           group: DEFAULT_GROUP
           refresh: true
